@@ -1,0 +1,33 @@
+.container{
+	display: flex;justify-content: center;align-items: center;height: 100vh;
+}
+.col-lg{
+	border: 1px solid blue;
+	border-radius: 10px;
+	width: 25em;
+}
+.login{
+	margin-top: 10px;
+}
+.hide{
+	display: none;
+}
+.col-7{
+	padding: 0px 0px 15px 35px;
+}
+hr{
+	color: #a00;
+	border: 5px solid;
+	border-radius: 4px;
+}
+.poor{
+	padding-top: 6px;
+}
+.col-3{
+	border: 1px solid gray;
+	border-radius: 4px;
+	margin: 0px 15px 20px 17px;
+}
+button{
+	margin: 20px 0px;
+}
