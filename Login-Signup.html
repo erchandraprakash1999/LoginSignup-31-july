@@ -6,41 +6,7 @@
 	<title>Login-Signup</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-	<style>
-		.container{
-			display: flex;justify-content: center;align-items: center;height: 100vh;
-		}
-		.col-lg{
-			border: 1px solid blue;
-			border-radius: 10px;
-			width: 25em;
-		}
-		.login{
-			margin-top: 10px;
-		}
-		.hide{
-			display: none;
-		}
-		.col-7{
-			padding: 0px 0px 15px 35px;
-		}
-		hr{
-			color: #a00;
-			border: 5px solid;
-			border-radius: 4px;
-		}
-		.poor{
-			padding-top: 6px;
-		}
-		.col-3{
-			border: 1px solid gray;
-			border-radius: 4px;
-			margin: 0px 15px 20px 17px;
-		}
-		button{
-			margin: 20px 0px;
-		}
-	</style>
+	<link rel="stylesheet" href="LoginSignup.css">
 </head>
 <body class="p-3 m-0 border-2 bd-example m-0 border-0">
 	<div class="container">
@@ -89,35 +55,6 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		let login = document.querySelector(".login");
-		let h1 = document.querySelector(".h1");
-		let btn = document.querySelector(".btn");
-		let phone = document.querySelector(".hide");
-		let stren = document.querySelector(".stren");
-		let forget = document.querySelector(".forget");
-		let unhide = document.querySelector(".unhide");
-
-		login.addEventListener("click",function(){
-			if (h1.innerHTML == "SignUp"){
-				h1.innerHTML = "Login";
-				login.innerHTML = "Don't have an account?";
-				phone.classList.add("hide");
-				stren.classList.add("hide");
-				forget.classList.remove("hide");
-				unhide.classList.remove("hide");
-
-			}else{
-				h1.innerHTML = "SignUp";
-				login.innerHTML = "Already have an account";
-				phone.classList.remove("hide");
-				stren.classList.remove("hide");
-				forget.classList.add("hide");
-				unhide.classList.add("hide");
-				btn.innerHTML = "Create Account";
-			}
-			h1.innerHTML = m;
-		})
-	</script>
+	<script src="LoginSignup.js"></script>
 </body>
 </html>
